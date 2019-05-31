@@ -2,7 +2,7 @@ rm(list= ls())
 #Ejercicio 1
 funcionpleb<-function(total,votosSI,votosNO){#Se cra la función plebicito y se agregran 3 variables correspondientes al enunciado"
   # A continuación se plantean las diversas condiciones para la opcion ganadora
-    if((votosSI+votosNO)>=(total*0.5+1)&&(votosSI>votosNO)){ # A continuación se plantean las 
+    if((votosSI+votosNO)>=(total*0.5+1)&&(votosSI>votosNO)){ 
      print("GANA EL NO")
   }else if((votosSI+votosNO)>=(total*0.5+1)&&(votosNO=votosSI)){
      print("GANA EL NO")
@@ -17,6 +17,7 @@ funcionpleb<-function(total,votosSI,votosNO){#Se cra la función plebicito y se a
    }
 }
 # se crea una variable la cual se le asignaran los valores del total o quorum, cantidad de votos si y no
+#se crea la variable conteo votos a la cual se le asignara la funcion anteriormente creada con valores aleatorios
 conteovotos<-funcionpleb(200,100,100)
 print("La opcion ganadora es: ")
 #Posteriormente dará como resultado la opción ganadora#
